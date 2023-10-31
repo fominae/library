@@ -1,5 +1,10 @@
 import datetime
+
+from django.urls import reverse
 from django.utils import timezone
+from django.test import TestCase
+from catalog.models import Author
+
 
 from catalog.models import BookInstance, Book, Genre, Language
 from django.contrib.auth.models import User # Необходимо для представления User как borrower
